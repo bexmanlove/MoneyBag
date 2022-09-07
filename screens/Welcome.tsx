@@ -36,7 +36,7 @@ const BottomSection = styled.View`
 `;
 
 // image
-import background from "./../assets/bgs/background.jpg";
+import background from "./../assets/bgs/background_v1.png";
 
 const Welcome: FunctionComponent = () => {
     return (
