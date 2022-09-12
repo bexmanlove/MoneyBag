@@ -6,6 +6,7 @@ import styled from "styled-components/native";
 import { colors } from "../components/colors";
 import { Container } from "../components/shared";
 import CardSection from "../components/Cards/CardSection";
+import TransactionSection from "../components/Transactions/TransactionSection";
 
 // card logos
 import logo1 from "./../assets/cards/visa_white.png";
@@ -41,10 +42,47 @@ const Home: FunctionComponent = () => {
       logo: logo1,
     }
   ]
+
+  const transactionData = [
+    {
+      id: 1,
+      amount: "-$86.00",
+      date: "14 Sept 2021",
+      title: "Taxi",
+      subtitle: "Uber car",
+      art: {
+        background: colors.primary,
+        icon: "car",
+      },
+    },
+    {
+      id: 2,
+      amount: "-$286.00",
+      date: "14 Sept 2021",
+      title: "Shopping",
+      subtitle: "Ali express",
+      art: {
+        background: colors.tertiary,
+        icon: "cart",
+      },
+    },
+    {
+      id: 3,
+      amount: "-$586.00",
+      date: "14 Aug 2021",
+      title: "Travel",
+      subtitle: "Emirates",
+      art: {
+        background: colors.accent,
+        icon: "airplane",
+      },
+    }
+  ]
     return (
       <HomeContainer>
           <StatusBar style="dark" />
           <CardSection data={cardData} />
+          <TransactionSection data={transactionData} />
       </HomeContainer>
     );
 };
