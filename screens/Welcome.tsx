@@ -39,27 +39,25 @@ const BottomSection = styled.View`
 import background from "./../assets/bgs/background_v1.png";
 
 const Welcome: FunctionComponent = () => {
-    return (
-        <>
-          <StatusBar style="light" />
-          <WelcomeContainer>
-              <TopSection>
-                <TopImage source={background} />
-              </TopSection>
-              <BottomSection>
-                <BigText textStyles={{ width: "70%", marginBottom: 25 }}>
-                  Best way to track your money
-                </BigText>
-                <SmallText textStyles={{ width: "70%", marginBottom: 25 }}>
-                  Best payment method, connects your money to your friends/family
-                </SmallText>
-                <RegularButton onPress={() => {}}>
-                  Get Started
-                </RegularButton>
-              </BottomSection>
-          </WelcomeContainer>
-        </>
-    );
+  return (
+    <>
+      <StatusBar style="light" />
+      <WelcomeContainer>
+        <TopSection>
+          <TopImage source={background} />
+        </TopSection>
+        <BottomSection>
+          <BigText textStyles={{ width: "70%", marginBottom: 25 }}>
+            Best way to track your money
+          </BigText>
+          <SmallText textStyles={{ width: "70%", marginBottom: 25 }}>
+            Best payment method, connects your money to your friends/family
+          </SmallText>
+          <RegularButton onPress={() => {}}>Get Started</RegularButton>
+        </BottomSection>
+      </WelcomeContainer>
+    </>
+  );
 };
 
 export default Welcome;

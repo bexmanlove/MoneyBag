@@ -15,19 +15,19 @@ const CardList = styled.FlatList`
 import { CardSectionProps } from "./types";
 
 const CardSection: FunctionComponent<CardSectionProps> = (props) => {
-    return (
-      <CardList
-        data={props.data}
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{
-          paddingRight: 25,
-          alignItems: "center",
-        }}
-        keyExtractor={({ id }: any) => id.toString()}
-        renderItem={({ item }: any) => <CardItem {...item} />}
-      />
-    );
+  return (
+    <CardList
+      data={props.data}
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}
+      contentContainerStyle={{
+        paddingRight: 25,
+        alignItems: "center",
+      }}
+      keyExtractor={({ id }: any) => id.toString()}
+      renderItem={({ item }: any) => <CardItem {...item} />}
+    />
+  );
 };
 
 export default CardSection;

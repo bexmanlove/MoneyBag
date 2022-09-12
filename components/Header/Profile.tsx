@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from "react";
 import styled from "styled-components/native";
 import {
-    ImageSourcePropType,
-    GestureResponderEvent,
-    StyleProp,
-    ViewStyle,
-    ImageStyle,
+  ImageSourcePropType,
+  GestureResponderEvent,
+  StyleProp,
+  ViewStyle,
+  ImageStyle,
 } from "react-native";
 
 const StyledView = styled.TouchableOpacity`
@@ -30,11 +30,11 @@ interface ProfileProps {
 }
 
 const Profile: FunctionComponent<ProfileProps> = (props) => {
-    return (
-      <StyledView onPress={props.onPress} style={props.imgContainerStyle}>
-          <StyledImage style={props.imgStyle} source={props.img} />
-      </StyledView>
-    );
+  return (
+    <StyledView onPress={props.onPress} style={props.imgContainerStyle}>
+      <StyledImage style={props.imgStyle} source={props.img} />
+    </StyledView>
+  );
 };
 
 export default Profile;

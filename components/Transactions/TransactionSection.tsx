@@ -29,30 +29,32 @@ const TransactionList = styled.FlatList`
   width: 100%;
 `;
 
-const TransactionSection: FunctionComponent<TransactionSectionProps> = (props) => {
-    return (
-      <TransactionSectionBackground>
-          <TransactionRow style={{ marginBottom: 25 }}>
-            <RegularText textStyles={{ fontSize: 19, color: colors.secondary }}>
-                Transaction
-            </RegularText>
-            <SmallText textStyles={{ color: colors.secondary }}>
-              Recent
-              <Ionicons name="caret-down" size={13} color={colors.graydark} />
-            </SmallText>
-          </TransactionRow>
+const TransactionSection: FunctionComponent<TransactionSectionProps> = (
+  props
+) => {
+  return (
+    <TransactionSectionBackground>
+      <TransactionRow style={{ marginBottom: 25 }}>
+        <RegularText textStyles={{ fontSize: 19, color: colors.secondary }}>
+          Transaction
+        </RegularText>
+        <SmallText textStyles={{ color: colors.secondary }}>
+          Recent
+          <Ionicons name="caret-down" size={13} color={colors.graydark} />
+        </SmallText>
+      </TransactionRow>
 
-          <TransactionList 
-            data={props.data}
-            showsVerticalScrollIndicator={false}
-            contentContainerStyle={{
-                paddingBottom: 25,
-            }}
-            keyExtractor={({ id }: any) => id.toString()}
-            renderItem={({ item }: any) => <TransactionItem {...item} />}
-          />
-      </TransactionSectionBackground>
-    );
-}
+      <TransactionList
+        data={props.data}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{
+          paddingBottom: 25,
+        }}
+        keyExtractor={({ id }: any) => id.toString()}
+        renderItem={({ item }: any) => <TransactionItem {...item} />}
+      />
+    </TransactionSectionBackground>
+  );
+};
 
 export default TransactionSection;

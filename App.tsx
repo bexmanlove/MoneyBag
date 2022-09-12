@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 //custom font
-import AppLoading from 'expo-app-loading';
-import { useFonts } from 'expo-font';
+import AppLoading from "expo-app-loading";
+import { useFonts } from "expo-font";
 
 // React Navigation
-import RootStack from './navigators/RootStack';
+import RootStack from "./navigators/RootStack";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -16,8 +16,5 @@ export default function App() {
     return <AppLoading />;
   }
 
-  return (
-    <RootStack />
-  );
+  return <RootStack />;
 }
-

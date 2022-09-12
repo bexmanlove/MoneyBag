@@ -16,7 +16,7 @@ const HomeContainer = styled(Container)`
   background-color: ${colors.graylight};
   width: 100%;
   flex: 1;
-`
+`;
 
 const Home: FunctionComponent = () => {
   const cardData = [
@@ -28,20 +28,20 @@ const Home: FunctionComponent = () => {
       logo: logo1,
     },
     {
-      id: 2, 
+      id: 2,
       accountNo: "3845730203",
       balance: 12000.01,
       alias: "Personal Prepaid",
       logo: logo2,
     },
     {
-      id: 3, 
+      id: 3,
       accountNo: "3845238847",
       balance: 5600.83,
       alias: "School Prepaid",
       logo: logo1,
-    }
-  ]
+    },
+  ];
 
   const transactionData = [
     {
@@ -49,7 +49,7 @@ const Home: FunctionComponent = () => {
       amount: "-$86.00",
       date: "14 Sept 2021",
       title: "Taxi",
-      subtitle: "Uber car",
+      subtitle: "Lyft",
       art: {
         background: colors.primary,
         icon: "car",
@@ -60,7 +60,7 @@ const Home: FunctionComponent = () => {
       amount: "-$286.00",
       date: "14 Sept 2021",
       title: "Shopping",
-      subtitle: "Ali express",
+      subtitle: "American Eagle",
       art: {
         background: colors.tertiary,
         icon: "cart",
@@ -71,20 +71,20 @@ const Home: FunctionComponent = () => {
       amount: "-$586.00",
       date: "14 Aug 2021",
       title: "Travel",
-      subtitle: "Emirates",
+      subtitle: "American Airlines",
       art: {
         background: colors.accent,
         icon: "airplane",
       },
-    }
-  ]
-    return (
-      <HomeContainer>
-          <StatusBar style="dark" />
-          <CardSection data={cardData} />
-          <TransactionSection data={transactionData} />
-      </HomeContainer>
-    );
+    },
+  ];
+  return (
+    <HomeContainer>
+      <StatusBar style="dark" />
+      <CardSection data={cardData} />
+      <TransactionSection data={transactionData} />
+    </HomeContainer>
+  );
 };
 
 export default Home;

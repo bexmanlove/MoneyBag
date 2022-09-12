@@ -11,7 +11,7 @@ import SmallText from "../Texts/SmallText";
 // types
 import { CardProps } from "./types";
 
-//images 
+//images
 import card_bg from "./../../assets/bgs/background_transparent.png";
 
 const CardBackground = styled.ImageBackground`
@@ -53,30 +53,34 @@ const Logo = styled.Image`
 const CardItem: FunctionComponent<CardProps> = (props) => {
   const handlePress = () => {};
 
-    return (
-        <CardBackground source={card_bg}>
-          <CardTouchable underlayColor={colors.secondary} onPress={handlePress}>
-            <TouchableView>
-              <CardRow>
-                  <RegularText textStyles={{ color: colors.white}}>
-                      ****** {props.accountNo.slice(6, 10)}
-                  </RegularText>
-              </CardRow>
-              <CardRow>
-                  <View style={{ flex: 3 }}>
-                    <SmallText textStyles={{ marginBottom: 5, color: colors.graylight}}>
-                        Total Balance
-                    </SmallText>
-                    <RegularText textStyles={{ fontSize: 19, color: colors.graylight }}>
-                        ${props.balance}
-                    </RegularText>
-                  </View>
-                  <Logo source={props.logo} />
-              </CardRow>
-            </TouchableView>
-          </CardTouchable>
-        </CardBackground>
-    );
+  return (
+    <CardBackground source={card_bg}>
+      <CardTouchable underlayColor={colors.secondary} onPress={handlePress}>
+        <TouchableView>
+          <CardRow>
+            <RegularText textStyles={{ color: colors.white }}>
+              ****** {props.accountNo.slice(6, 10)}
+            </RegularText>
+          </CardRow>
+          <CardRow>
+            <View style={{ flex: 3 }}>
+              <SmallText
+                textStyles={{ marginBottom: 5, color: colors.graylight }}
+              >
+                Total Balance
+              </SmallText>
+              <RegularText
+                textStyles={{ fontSize: 19, color: colors.graylight }}
+              >
+                ${props.balance}
+              </RegularText>
+            </View>
+            <Logo source={props.logo} />
+          </CardRow>
+        </TouchableView>
+      </CardTouchable>
+    </CardBackground>
+  );
 };
 
 export default CardItem;

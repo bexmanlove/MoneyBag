@@ -32,54 +32,54 @@ const RightView = styled.View`
 `;
 
 const TransactionItem: FunctionComponent<TransactionProps> = (props) => {
-    return (
-      <TransactionRow>
-          <LeftView>
-            <TransactionAvi
-              background={props.art.background}
-              icon={props.art.icon}
-            />
-            <View style={{ marginLeft: 10 }} >
-              <RegularText 
-                textStyles={{ 
-                  color: colors.secondary, 
-                  textAlign: "left", 
-                  marginBottom: 5,
-                }}
-              >
-                {props.title}
-              </RegularText>
-              <SmallText
-                textStyles={{ 
-                  color: colors.graydark, 
-                  textAlign: "left", 
-                }}
-              >
-                {props.subtitle}
-              </SmallText>
-            </View>
-          </LeftView>
-          <RightView>
-            <RegularText 
-              textStyles={{ 
-                color: colors.secondary, 
-                textAlign: "right", 
-                marginBottom: 5,
-              }}
-            >
-              {props.amount}
-            </RegularText>
-            <SmallText
-              textStyles={{ 
-                color: colors.graydark, 
-                textAlign: "right", 
-              }}
-            >
-              {props.date}
-            </SmallText>
-          </RightView>
-      </TransactionRow>
-    );
+  return (
+    <TransactionRow>
+      <LeftView>
+        <TransactionAvi
+          background={props.art.background}
+          icon={props.art.icon}
+        />
+        <View style={{ marginLeft: 10 }}>
+          <RegularText
+            textStyles={{
+              color: colors.secondary,
+              textAlign: "left",
+              marginBottom: 5,
+            }}
+          >
+            {props.title}
+          </RegularText>
+          <SmallText
+            textStyles={{
+              color: colors.graydark,
+              textAlign: "left",
+            }}
+          >
+            {props.subtitle}
+          </SmallText>
+        </View>
+      </LeftView>
+      <RightView>
+        <RegularText
+          textStyles={{
+            color: colors.secondary,
+            textAlign: "right",
+            marginBottom: 5,
+          }}
+        >
+          {props.amount}
+        </RegularText>
+        <SmallText
+          textStyles={{
+            color: colors.graydark,
+            textAlign: "right",
+          }}
+        >
+          {props.date}
+        </SmallText>
+      </RightView>
+    </TransactionRow>
+  );
 };
 
 export default TransactionItem;

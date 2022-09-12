@@ -21,29 +21,31 @@ interface GreetingProps {
 }
 
 const Greeting: FunctionComponent<GreetingProps> = (props) => {
-    return (
-      <StyledView>
-          <RegularText 
-            textStyles={[
-              {
-                color: colors.secondary,
-                fontSize: 22,
-              },
-              props.mainTextStyles,
-            ]}>
-              {props.mainText}
-          </RegularText>
-          <SmallText
-            textStyles={[
-              {
-                color: colors.graydark,
-              },
-              props.subTextStyles,
-            ]}>
-              {props.subText}
-          </SmallText>
-      </StyledView>
-    );
+  return (
+    <StyledView>
+      <RegularText
+        textStyles={[
+          {
+            color: colors.secondary,
+            fontSize: 22,
+          },
+          props.mainTextStyles,
+        ]}
+      >
+        {props.mainText}
+      </RegularText>
+      <SmallText
+        textStyles={[
+          {
+            color: colors.graydark,
+          },
+          props.subTextStyles,
+        ]}
+      >
+        {props.subText}
+      </SmallText>
+    </StyledView>
+  );
 };
 
 export default Greeting;

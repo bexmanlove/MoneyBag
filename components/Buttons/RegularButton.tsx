@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
 import styled from "styled-components/native";
-import { 
-    GestureResponderEvent, 
-    StyleProp, 
-    TextStyle, 
-    ViewStyle 
+import {
+  GestureResponderEvent,
+  StyleProp,
+  TextStyle,
+  ViewStyle,
 } from "react-native";
 
 //components
@@ -28,13 +28,11 @@ interface ButtonProps {
 }
 
 const RegularButton: FunctionComponent<ButtonProps> = (props) => {
-    return (
-      <ButtonView onPress={props.onPress} style={props.btnStyles}>
-          <RegularText textStyles={props.textStyles}>
-              {props.children}
-          </RegularText>
-      </ButtonView>
-    )
+  return (
+    <ButtonView onPress={props.onPress} style={props.btnStyles}>
+      <RegularText textStyles={props.textStyles}>{props.children}</RegularText>
+    </ButtonView>
+  );
 };
 
 export default RegularButton;

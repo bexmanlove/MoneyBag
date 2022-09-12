@@ -4,7 +4,7 @@ import styled from "styled-components/native";
 // icons
 import { Ionicons } from "@expo/vector-icons";
 
-// colors 
+// colors
 import { colors } from "../colors";
 
 // types
@@ -19,11 +19,11 @@ const StyledView = styled.View`
 `;
 
 const TransactionAvi: FunctionComponent<TransactionAviProps> = (props) => {
-    return (
-      <StyledView style={{ backgroundColor: props.background }}>
-          <Ionicons name={props.icon} size={25} color={colors.white} />
-      </StyledView>
-    );
+  return (
+    <StyledView style={{ backgroundColor: props.background }}>
+      <Ionicons name={props.icon} size={25} color={colors.white} />
+    </StyledView>
+  );
 };
 
 export default TransactionAvi;
