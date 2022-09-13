@@ -6,8 +6,9 @@ Using the tutorial ["Create A React Native TypeScript Project | A Beautiful Wall
 
 ### Welcome Screen
 
-This welcome screen is the first screen users see upon starting the app. Upon pressing the _Get Started_ button, users are brought to the Home screen.
-![Welcome screen, containing the text "Best way to track your money" and "Best payment method, connects your money to your friends/family", along with a "Get Started" button](assets/readme/welcome.png)
+This welcome screen is the first screen users see upon starting the app. Upon pressing the Get Started button, users are brought to the Home screen.
+
+<img src="./assets/readme/welcome.png" width=200 alt='Welcome screen, containing the text "Best way to track your money" and "Best payment method, connects your money to your friends/family", along with a "Get Started" button'>
 
 ### Home Screen
 
@@ -16,14 +17,16 @@ The Home Screen includes three features:
 - Cards, which showcase different debit/credit cards and their respective balances
 - Transactions, which showcase recent costs accrued
 - Send Money, an adjustable sheet at the bottom of the screen that shows acquaintances a user can send money to
-  ![Home screen, containing cards, transactions, and a minimized "Send Money" screen](assets/readme/home-minimized.png)
-  ![Home screen, containing cards, transactions, and a maximized "Send Money" screen](assets/readme/home-maximized.png)
-  Upon clicking one of the cards at the top of the screen, the user is brought to that card's Balance screen.
+
+<img src="./assets/readme/home-minimized.png" width=200 alt='Home screen, containing cards, transactions, and a minimized "Send Money" screen'> <img src="./assets/readme/home-maximized.png" width=200 alt='Home screen, containing cards, transactions, and a maximized "Send Money" screen'>
+
+Upon clicking one of the cards at the top of the screen, the user is brought to that card's Balance screen.
 
 ### Balance Screen
 
 The Balance Screen shows the amount on the respective card, a larger version of the card visual on the Home Screen, and a cancel button. The cancel button does not currently have any functionality.
-![Balance screen, containing the current amount on the card, a visual of the card, and a "Cancel" button](assets/readme/balance.png)
+
+<img src="./assets/readme/balance.png" width=200 alt='Balance screen, containing the current amount on the card, a visual of the card, and a "Cancel" button'>
 
 ## Running the App
 
