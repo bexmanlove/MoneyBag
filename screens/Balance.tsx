@@ -7,11 +7,11 @@ import { colors } from "../components/colors";
 import { Container } from "../components/shared";
 import AmountSection from "../components/Balance/AmountSection";
 import BalanceCardSection from "../components/Balance/BalanceCardSection";
+import ButtonSection from "../components/Balance/ButtonSection";
 
 // types
 import { RootStackParamList } from "../navigators/RootStack";
 import { StackScreenProps } from "@react-navigation/stack";
-import ButtonSection from "../components/Balance/ButtonSection";
 
 type Props = StackScreenProps<RootStackParamList, "Balance">;
 

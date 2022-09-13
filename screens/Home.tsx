@@ -18,13 +18,19 @@ import portrait1 from "./../assets/portraits/1.jpg";
 import portrait2 from "./../assets/portraits/2.jpg";
 import portrait3 from "./../assets/portraits/3.jpg";
 
+// types
+import { RootStackParamList } from "../navigators/RootStack";
+import { StackScreenProps } from "@react-navigation/stack";
+
+export type Props = StackScreenProps<RootStackParamList, "Home">;
+
 const HomeContainer = styled(Container)`
   background-color: ${colors.graylight};
   width: 100%;
   flex: 1;
 `;
 
-const Home: FunctionComponent = () => {
+const Home: FunctionComponent<Props> = () => {
   const cardData = [
     {
       id: 1,

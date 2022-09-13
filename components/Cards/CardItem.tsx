@@ -8,6 +8,10 @@ import { ScreenWidth } from "../shared";
 import RegularText from "../Texts/RegularText";
 import SmallText from "../Texts/SmallText";
 
+// navigation
+import { useNavigation } from "@react-navigation/native";
+import { Props as HomeProps } from "../../screens/Home";
+
 // types
 import { CardProps } from "./types";
 
@@ -51,7 +55,12 @@ const Logo = styled.Image`
 `;
 
 const CardItem: FunctionComponent<CardProps> = (props) => {
-  const handlePress = () => {};
+  // configuring navigation
+  const navigation = useNavigation<HomeProps["navigation"]>();
+
+  const handlePress = () => {
+    navigation.navigate("Balance", { ...props });
+  };
 
   return (
     <CardBackground source={card_bg}>
